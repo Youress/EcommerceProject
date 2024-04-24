@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container mx-auto">
+        <div class="py-8 px-14">
+          <div class="flex items-center justify-between">
+            <span>
+              <a href="#" class="text-[#1773b0]" aria-label="shopping-cart">
+                <span class="h-10 w-10 block"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-full h-full"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </span>
+
+            <div>
+              <h2 class="font-semibold text-4xl">
+                <a href="#" class="text-inherit">Store</a>
+              </h2>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="bg-[#f5f5f5] border divide-solid hidden lg:block">
+      <button
+        class="w-full block text-left text-[#1773b0] max-w-[66rem] mx-auto"
+      >
+        <div class="flex items-center justify-between p-8">
+          <span class="flex items-center gap-4 text-3xl font-medium"
+            >Show order summary
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </span>
+          <span class="font-medium text-3xl text-black">$55.00</span>
+        </div>
+      </button>
+    </div>
+    <div class="border-t grid grid-cols-twocol lg:grid-cols-1">
+      <div class="border-r border-[#dfdfdf] flex justify-end lg:justify-center">
+        <div class="max-w-[66rem] p-14 w-full">
+          <section>
+            <div class="main-checkout">
+              <div>
+                <form action="#" name="contact" id="contactform">
+                  <div>
+                    <div
+                      class="payment ways flex flex-col justify-center items-center"
+                    >
+                      <div>
+                        <h2 class="text-[#707070] text-xl">Express CheckOut</h2>
+                      </div>
+                      <div
+                        class="flex items-center justify-between gap-4 w-full mt-6"
+                      >
+                        <div class="h-[4.8rem] flex-1">
+                          <a
+                            href="#"
+                            aria-label="shop pay"
+                            class="bg-[#592ff4] flex justify-center items-center h-full rounded-md transition-all duration-300 ease-in hover:bg-[#4668f0]"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="inherit"
+                              aria-hidden="true"
+                              preserveAspectRatio="xMidYMid"
+                              viewBox="0 0 341 80.035"
+                              class="w-[84px]"
+                              style="fill: rgb(255, 255, 255)"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M227.297 0c-6.849 0-12.401 5.472-12.401 12.223v55.59c0 6.75 5.552 12.222 12.401 12.222h101.06c6.849 0 12.401-5.472 12.401-12.222v-55.59c0-6.75-5.552-12.223-12.401-12.223zm17.702 55.892v-14.09h8.994c8.217 0 12.586-4.542 12.586-11.423s-4.369-11-12.586-11h-14.788v36.513zm0-31.084h7.664c5.319 0 7.932 2.154 7.932 5.758s-2.518 5.758-7.695 5.758h-7.901zm31.796 31.833c4.417 0 7.314-1.92 8.644-5.196.38 3.65 2.613 5.523 7.457 4.26l.048-3.886c-1.948.187-2.328-.515-2.328-2.528v-9.55c0-5.617-3.752-8.94-10.686-8.94-6.84 0-10.782 3.37-10.782 9.08h5.32c0-2.714 1.947-4.353 5.367-4.353 3.609 0 5.272 1.545 5.224 4.214v1.217l-6.127.655c-6.887.749-10.686 3.324-10.686 7.818 0 3.698 2.659 7.209 8.549 7.209m1.187-4.213c-2.992 0-4.179-1.592-4.179-3.184 0-2.153 2.47-3.136 7.314-3.698l3.8-.421c-.238 4.12-3.04 7.303-6.935 7.303m32.555 5.29c-2.422 5.804-6.317 7.536-12.396 7.536h-2.613V60.48h2.803c3.324 0 4.939-1.03 6.697-3.979l-10.782-24.95h5.984l7.695 18.21 6.839-18.21h5.842z"
+                                clip-rule="evenodd"
+                              ></path>
+                              <path
+                                d="M29.514 35.18c-7.934-1.697-11.469-2.36-11.469-5.374 0-2.834 2.392-4.246 7.176-4.246 4.207 0 7.283 1.813 9.546 5.363.171.274.524.369.812.222l8.927-4.447a.616.616 0 0 0 .256-.864c-3.705-6.332-10.55-9.798-19.562-9.798-11.843 0-19.2 5.752-19.2 14.898 0 9.714 8.96 12.169 16.904 13.865 7.944 1.697 11.49 2.36 11.49 5.374s-2.584 4.435-7.742 4.435c-4.763 0-8.297-2.15-10.433-6.321a.63.63 0 0 0-.843-.274L6.47 52.364a.623.623 0 0 0-.278.843c3.535 7.006 10.785 10.947 20.47 10.947 12.334 0 19.787-5.658 19.787-15.088s-9.001-12.169-16.935-13.865zM77.353 16.036c-5.062 0-9.536 1.77-12.75 4.92-.203.19-.534.053-.534-.221V.622a.62.62 0 0 0-.63-.622h-11.17a.62.62 0 0 0-.63.622v62.426a.62.62 0 0 0 .63.621h11.17a.62.62 0 0 0 .63-.621V35.664c0-5.289 4.11-9.345 9.653-9.345 5.542 0 9.557 3.972 9.557 9.345v27.384a.62.62 0 0 0 .63.621h11.17a.62.62 0 0 0 .63-.621V35.664c0-11.505-7.646-19.618-18.356-19.618zM118.389 14.255c-6.065 0-11.767 1.823-15.847 4.467a.62.62 0 0 0-.202.833l4.922 8.292c.182.295.566.4.865.22a19.8 19.8 0 0 1 10.262-2.78c9.749 0 16.914 6.785 16.914 15.75 0 7.64-5.734 13.297-13.006 13.297-5.926 0-10.037-3.403-10.037-8.207 0-2.75 1.185-5.005 4.271-6.596a.607.607 0 0 0 .246-.864l-4.645-7.754a.63.63 0 0 0-.759-.264c-6.225 2.276-10.593 7.755-10.593 15.109 0 11.126 8.981 19.428 21.507 19.428 14.629 0 25.147-9.998 25.147-24.338 0-15.372-12.237-26.603-29.066-26.603zM180.098 15.952c-5.649 0-10.689 2.054-14.373 5.678a.313.313 0 0 1-.534-.22v-4.363a.62.62 0 0 0-.63-.621H153.68a.62.62 0 0 0-.63.621v62.331a.62.62 0 0 0 .63.622h11.169a.62.62 0 0 0 .631-.622v-20.44c0-.274.331-.41.533-.231 3.674 3.371 8.532 5.342 14.096 5.342 13.102 0 23.321-10.463 23.321-24.054 0-13.592-10.23-24.054-23.321-24.054zm-2.103 37.54c-7.454 0-13.103-5.848-13.103-13.582 0-7.733 5.638-13.58 13.103-13.58s13.091 5.752 13.091 13.58-5.553 13.581-13.102 13.581z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="h-[4.8rem] flex-1">
+                          <a
+                            href="#"
+                            aria-label="google pay"
+                            class="bg-black flex justify-center items-center h-full rounded-md transition-all duration-300 ease-in hover:bg-[#212529]"
+                          >
+                            <svg
+                              width="41"
+                              height="17"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g fill="none" fill-rule="evenodd">
+                                <path
+                                  d="M19.526 2.635v4.083h2.518c.6 0 1.096-.202 1.488-.605.403-.402.605-.882.605-1.437 0-.544-.202-1.018-.605-1.422-.392-.413-.888-.62-1.488-.62h-2.518zm0 5.52v4.736h-1.504V1.198h3.99c1.013 0 1.873.337 2.582 1.012.72.675 1.08 1.497 1.08 2.466 0 .991-.36 1.819-1.08 2.482-.697.665-1.559.996-2.583.996h-2.485v.001zm7.668 2.287c0 .392.166.718.499.98.332.26.722.391 1.168.391.633 0 1.196-.234 1.692-.701.497-.469.744-1.019.744-1.65-.469-.37-1.123-.555-1.962-.555-.61 0-1.12.148-1.528.442-.409.294-.613.657-.613 1.093m1.946-5.815c1.112 0 1.989.297 2.633.89.642.594.964 1.408.964 2.442v4.932h-1.439v-1.11h-.065c-.622.914-1.45 1.372-2.486 1.372-.882 0-1.621-.262-2.215-.784-.594-.523-.891-1.176-.891-1.96 0-.828.313-1.486.94-1.976s1.463-.735 2.51-.735c.892 0 1.629.163 2.206.49v-.344c0-.522-.207-.966-.621-1.33a2.132 2.132 0 0 0-1.455-.547c-.84 0-1.504.353-1.995 1.062l-1.324-.834c.73-1.045 1.81-1.568 3.238-1.568m11.853.262l-5.02 11.53H34.42l1.864-4.034-3.302-7.496h1.635l2.387 5.749h.032l2.322-5.75z"
+                                  fill="#FFF"
+                                />
+                                <path
+                                  d="M13.448 7.134c0-.473-.04-.93-.116-1.366H6.988v2.588h3.634a3.11 3.11 0 0 1-1.344 2.042v1.68h2.169c1.27-1.17 2.001-2.9 2.001-4.944"
+                                  fill="#4285F4"
+                                />
+                                <path
+                                  d="M6.988 13.7c1.816 0 3.344-.595 4.459-1.621l-2.169-1.681c-.603.406-1.38.643-2.29.643-1.754 0-3.244-1.182-3.776-2.774H.978v1.731a6.728 6.728 0 0 0 6.01 3.703"
+                                  fill="#34A853"
+                                />
+                                <path
+                                  d="M3.212 8.267a4.034 4.034 0 0 1 0-2.572V3.964H.978A6.678 6.678 0 0 0 .261 6.98c0 1.085.26 2.11.717 3.017l2.234-1.731z"
+                                  fill="#FABB05"
+                                />
+                                <path
+                                  d="M6.988 2.921c.992 0 1.88.34 2.58 1.008v.001l1.92-1.918C10.324.928 8.804.262 6.989.262a6.728 6.728 0 0 0-6.01 3.702l2.234 1.731c.532-1.592 2.022-2.774 3.776-2.774"
+                                  fill="#E94235"
+                                />
+                              </g>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="pt-7 pb-9">
+              <div class="flex justify-center items-center">
+                <span class="w-full block h-[1px] bg-[#e9ecef]"></span
+                ><span class="text-[#707070] block text-2xl w-fit mx-4"
+                  >OR</span
+                >
+                <span class="w-full block h-[1px] bg-[#e9ecef]"></span>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-4">
+                    <h2 class="text-4xl font-semibold">Contact</h2>
+                    <a
+                      href="#"
+                      class="underline text-[#1773b0] text-[14px] transition-all duration-300 ease-in hover:text-[#023253]"
+                      >Log in</a
+                    >
+                  </div>
+                  <div class="mb-5">
+                    <div class="relative">
+                      
+                      <input
+                        class="peer w-full py-5 px-6 outline-none border border-[#dde3ec] rounded-md text-2xl focus:border-[#3b5bdb]"
+                        id="email1"
+                        name="email"
+                        placeholder="Email"
+                        type="email"
+                        aria-label="email"
+                        autocomplete=""
+                      />
+                      <label
+                        for="email1"
+                        class="block text-xl text-[#a1a1a1] absolute left-6 top-0 select-none peer-focus:translate-y-[2px] peer-focus:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                        >Email</label
+                      >
+                    </div>
+                  </div>
+                  <div class="mb-4 flex items-center justify-start gap-5">
+                    <input
+                      type="checkbox"
+                      id="marketing"
+                      name="marketing"
+                      class="w-7 h-7"
+                    />
+                    <label for="marketing" class="text-2xl"
+                      >Email me with news and offers</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="pt-12" aria-label="shipping adress">
+            <div>
+              <div>
+                <div>
+                  <div class="mb-8">
+                    <h2 class="text-4xl font-semibold">Delivery</h2>
+                  </div>
+                  <div class="flex gap-10 mb-4 items-center sm:flex-col sm:gap-6">
+                    <div class="flex-1 w-full relative">
+                      <input
+                        type="text"
+                        name="firstname"
+                        id="firstname1"
+                        required
+                        placeholder="First Name"
+                        class="peer w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                      />
+                      <label
+                        for="firstname"
+                        class="block text-xl text-[#a1a1a1] absolute left-8 top-0 select-none peer-valid:translate-y-[2px] peer-valid:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]  "
+                        >First name</label
+                      >
+                      
+                    </div>
+                    <div class="flex-1 w-full relative">
+                      <input
+                        required
+                        type="text"
+                        name="lastname"
+                        id="lastname1"
+                        placeholder="Last Name"
+                        class="peer w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                      />
+                      <label
+                        for="lastname"
+                        class="block text-xl text-[#a1a1a1] absolute left-8 top-0 select-none peer-valid:translate-y-[2px] peer-valid:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                        >Last name</label
+                      >
+                      
+                    </div>
+                  </div>
+
+                  <div class="mb-6">
+                    <div class="relative">
+                      <input
+                        required
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                        class="peer w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                      />
+                      <label
+                        for="email"
+                        class="block text-xl text-[#a1a1a1] absolute left-8 top-0 select-none peer-focus:translate-y-[2px] peer-focus:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                        >Email</label
+                      >
+                      
+                    </div>
+                  </div>
+                  <div class="mb-6 relative">
+                    <span class=" absolute font-medium  text-[#707070] right-4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none w-4 h-4 ">
+                      <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-fill h-fill"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </span>
+                    <label
+                      for="country"
+                      class="block text-xl text-[#a1a1a1] absolute left-8 top-[2px] select-none "
+                      >Country</label
+                    >
+                    <select
+                      name="countrycode"
+                      id="countrycode"
+                      class="text-[#333] w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb] appearance-none"
+                    >
+                      <option value="ca">Canda</option>
+                      <option value="us">United state</option>
+                    </select>
+                  </div>
+                  <div class="mb-6 relative">
+                    <input
+                    required
+                      type="text"
+                      name="address"
+                      id="address"
+                      placeholder="Street adress"
+                      class="peer w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                    />
+                    <label
+                      for="address"
+                      class="block text-xl text-[#a1a1a1] absolute left-8 top-0 select-none peer-valid:translate-y-[2px] peer-valid:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                      >Street address</label
+                    >
+                    
+                  </div>
+
+                  <div class="mb-6 relative">
+                    <input
+                    required
+                      type="text"
+                      name="address2"
+                      id="address2"
+                      placeholder="Street Address Line 2"
+                      class="peer w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                    />
+                    <label
+                      for="address2"
+                      class="block text-xl text-[#a1a1a1] absolute left-8 top-0 select-none peer-valid:translate-y-[2px] peer-valid:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                      >Street Address</label
+                    >
+                    
+                  </div>
+
+                  <div class="mb-6 relative">
+                    <div class="">
+                      <input
+                      required
+                        type="text"
+                        name="state"
+                        id="state"
+                        placeholder="State"
+                        class="peer w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                      />
+                      <label
+                        for="state"
+                        class="block text-xl text-[#a1a1a1] absolute left-8 top-0 select-none peer-valid:translate-y-[2px] peer-valid:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                        >State/Prvince </label
+                      >
+                      
+                    </div>
+                  </div>
+
+                  <div class="mb-6 flex items-center gap-10 sm:flex-col sm:gap-6">
+                    <div class="w-full relative">
+                      <input
+                      required
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="City"
+                        class="peer w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                      />
+                      <label
+                        for="post"
+                        class="block text-xl text-[#a1a1a1] absolute left-8 top-0 select-none peer-valid:translate-y-[2px] peer-valid:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                        >City</label
+                      >
+                    </div>
+                    <div class="w-full relative">
+                      <input
+                      required
+                        type="text"
+                        name="post"
+                        id="post"
+                        placeholder="Postal code"
+                        class="peer/post w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                      />
+                      <label
+                        for="post"
+                        class="block text-xl text-[#a1a1a1] absolute left-8 top-0 select-none peer-valid/post:translate-y-[2px] peer-valid/post:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                        >Post/Zip code</label
+                      >
+                      
+                    </div>
+                    <div class="w-full relative">
+                      <input
+                      required
+                        type="text"
+                        name="area"
+                        id="area"
+                        placeholder="Area"
+                        class="peer w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                      />
+                      <label
+                        for="area"
+                        class="block text-xl text-[#a1a1a1] absolute left-8 top-0 select-none peer-valid:translate-y-[2px] peer-valid:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                        >Area code</label
+                      >
+                      
+                    </div>
+                  </div>
+                  <div class="mb-6 relative">
+                    <input
+                      required
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="Phone"
+                      class="peer w-full pb-5 pt-7 px-8 border border-[#dde3ec] rounded-md text-xl outline-none  focus:border-[#3b5bdb]"
+                    />
+                    <label
+                      for="phone"
+                      class="block text-xl text-[#a1a1a1] absolute left-[1.1rem] top-0 select-none peer-valid:translate-y-[2px] peer-valid:opacity-100 opacity-0 transform duration-200 transition-all  translate-y-[1.3rem]"
+                      >Phone number</label
+                    >
+                    
+                  </div>
+                  <div class="my-10">
+                    <button
+                      class="bg-[#8A33FD] text-2xl rounded-md font-medium text-white py-5 px-8 transition-all ease-in duration-300 hover:bg-[#b197fc]"
+                    >
+                      Continue to delivery
+                    </button>
+                  </div>
+                  <div class="flex items-center gap-5">
+                    <input
+                      type="checkbox"
+                      id="supportCheckbox"
+                      class="w-[18px] h-[18px]"
+                    />
+                    <label for="supportCheckbox" class="text-2xl">
+                      Save my information for a faster checkout
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="h-[1px] bg-[#e9ecef] w-full my-10"></div>
+          <section>
+            <div>
+              <div class="mb-6">
+                <h2 class="font-bold text-[#3C4242] text-4xl mb-6">
+                  Shipping address
+                </h2>
+                <p class="font-normal text-xl">
+                  Select the address that matches your card or payment method.
+                </p>
+              </div>
+              <div class="p-8 bg-[#F6F6F6] rounded-md">
+                <div class="flex items-center gap-10">
+                  <label
+                    for="billing"
+                    class="text-3xl font-bold text-[#3C4242] has-[:checked]:bg-[#f0f5ff] has-[:checked]:border-[#1773b0] has-[:checked]:border w-full h-full py-6 px-4 flex items-center gap-4"
+                  >
+                    <input
+                      type="radio"
+                      name="billing"
+                      id="billing"
+                      class="accent-[#1773b0]"
+                      checked
+                    />
+                    Same as Billing adress
+                  </label>
+                </div>
+                <div class="h-[1px] bg-[#BEBCBD] w-full my-4"></div>
+                <div class="flex items-center gap-10">
+                  <label
+                    for="billing"
+                    class="text-3xl font-bold text-[#3C4242] has-[:checked]:bg-[#f0f5ff] has-[:checked]:border-[#1773b0] has-[:checked]:border w-full h-full py-6 px-4 flex items-center gap-4"
+                  >
+                    <input
+                      type="radio"
+                      name="billing"
+                      id="billing1"
+                      class="accent-[#1773b0]"
+                    />
+                    Use a diffrent shipping adress
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="h-[1px] bg-[#e9ecef] w-full my-10"></div>
+          <section>
+            <div>
+              <div class="mb-6">
+                <h2 class="font-bold text-[#3C4242] text-4xl mb-6">
+                  Shipping Method
+                </h2>
+              </div>
+              <div class="p-8 bg-[#F6F6F6] rounded-md">
+                <div class="py-6">
+                  <p class="text-3xl font-bold text-[#3C4242]">
+                    Arrives by Monday, June 7
+                  </p>
+                </div>
+                <div class="h-[1px] bg-[#BEBCBD] w-full"></div>
+                <div class="py-6 flex items-center justify-between">
+                  <p class="text-3xl font-bold text-[#3C4242]">
+                    Delivery Charges <br />
+                    <span class="text-xl font-normal text-[#3C4242]"
+                      >Additional fees may apply</span
+                    >
+                  </p>
+                  <span class="font-bold text-3xl">$5.00</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="h-[1px] bg-[#e9ecef] w-full my-10"></div>
+          <section>
+            <div>
+              <div class="mb-6">
+                <h2 class="font-bold text-[#3C4242] text-4xl mb-6">
+                  Payment Method
+                </h2>
+                <p class="font-normal text-xl">
+                  All transaction are secure and encrypted
+                </p>
+              </div>
+              <div class="p-8 bg-[#F6F6F6] rounded-md">
+                <div>
+                  <div class="py-6 flex items-center gap-10">
+                    <input
+                      type="radio"
+                      name="bill1"
+                      id="bill1"
+                      class="accent-[#BEBCBD]"
+                    />
+                    <label for="bill1" class="text-3xl font-bold text-[#3C4242]"
+                      >Credit Card <br />
+                      <span class="text-xl font-normal text-[#3C4242]"
+                        >We accept al major credit card</span
+                      ></label
+                    >
+                  </div>
+                  <div>
+                    <div
+                      class="flex items-center justify-start flex-wrap gap-4"
+                    >
+                      <img src="./assest/google.png" alt="google" class="sm:w-[60px]" />
+                      <img src="./assest/visa.png" alt="visa" class="sm:w-[60px]" />
+                      <img src="./assest/paypal.png" alt="paypal" class="sm:w-[60px]" />
+                      <img src="./assest/paypass.png" alt="pay" class="sm:w-[60px]" />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="">
+                      <div class="">
+                        <div class="p-8">
+                          <div class="flex flex-col gap-8 sm:gap-4">
+                            <div class="flex items-center gap-4 sm:flex-col">
+                              <div class="w-full">
+                                <label for="firstname" class="hidden"
+                                  >Card number</label
+                                >
+                                <input
+                                  type="text"
+                                  name="firstname"
+                                  placeholder="Card number"
+                                  id="firstname"
+                                  class="w-full py-5 px-8 border border-[#3C4242] rounded-md text-xl outline-none bg-[#F6F6F6] focus:border-[#3b5bdb]"
+                                />
+                              </div>
+                              <div class="w-full">
+                                <label for="lastname" class="hidden"
+                                  >Name of card</label
+                                >
+                                <input
+                                  type="text"
+                                  name="lastname"
+                                  placeholder="Name of card"
+                                  id="lastname"
+                                  class="w-full py-5 px-8 border border-[#3C4242] rounded-md text-xl outline-none bg-[#F6F6F6] focus:border-[#3b5bdb]"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 sm:flex-col">
+                              <div class="w-full">
+                                <label for="dob" class="hidden"
+                                  >Expiration Date</label
+                                >
+                                <input
+                                  type="text"
+                                  name="dob"
+                                  id="dob"
+                                  class="w-full py-5 px-8 border border-[#3C4242] rounded-md text-xl outline-none bg-[#F6F6F6] focus:border-[#3b5bdb]"
+                                  placeholder="Expiration date (MM/YY)"
+                                />
+                              </div>
+                              <div class="w-full">
+                                <label for="code" class="hidden"
+                                  >Security code</label
+                                >
+                                <div class="relative">
+                                  <input
+                                    type="password"
+                                    name="code"
+                                    placeholder="Securitycode"
+                                    id="code"
+                                    class="w-full py-5 px-8 border border-[#3C4242] rounded-md text-xl outline-none bg-[#F6F6F6] focus:border-[#3b5bdb]"
+                                  />
+
+                                  <span
+                                    class="absolute z-10 right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                    ><img src="./assest/eye.png" alt="eye"
+                                  /></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="h-[1px] bg-[#BEBCBD] w-full"></div>
+                <div class="py-6 flex items-center gap-10">
+                  <input
+                    type="radio"
+                    name="bill2"
+                    id="bill2"
+                    class="accent-[#BEBCBD]"
+                  />
+                  <label for="bill2" class="text-3xl font-bold text-[#3C4242]"
+                    >Cash on Delivery <br />
+                    <span class="text-xl font-normal text-[#3C4242]"
+                      >Pay with cash upon delivery</span
+                    ></label
+                  >
+                </div>
+                <div class="h-[1px] bg-[#BEBCBD] w-full"></div>
+                <div class="py-6 flex items-center gap-10">
+                  <input
+                    type="radio"
+                    name="bill3"
+                    id="bill3"
+                    class="accent-[#BEBCBD]"
+                  />
+                  <label for="bill3" class="text-3xl font-bold text-[#3C4242]"
+                    >Paypal</label
+                  >
+                </div>
+              </div>
+              <div class="my-10 lg:hidden">
+                <button
+                  class="w-full bg-[#8A33FD] text-2xl rounded-md font-medium text-white text-center py-6 px-8 transition-all ease-in duration-300 hover:bg-[#b197fc]"
+                >
+                  Pay now
+                </button>
+              </div>
+            </div>
+          </section>
+          <footer class="border-t mt-10  lg:hidden">
+            <div class="pt-8">
+              <div class="flex items-center justify-start gap-4">
+                <a
+                  href="#"
+                  class="underline text-[#1773b0] text-[14px] transition-all duration-300 ease-in hover:text-[#023253]"
+                  >Refund Policy</a
+                >
+                <a
+                  href="#"
+                  class="underline text-[#1773b0] text-[14px] transition-all duration-300 ease-in hover:text-[#023253]"
+                  >Terms of service</a
+                >
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <div class="justify-center items-center lg:flex flex-col">
+        <div class="p-14 w-full max-w-[52rem] sticky top-0">
+          <section>
+            <div>
+              <div class="cols ">
+                <div class="flex flex-col gap-10 lg:hidden">
+                  <div class="flex items-center border-b border-solid pb-12 ">
+                  <div>
+                    <picture class="relative">
+                      <span class="absolute bg-[#707070] flex justify-center px-2 text-white text-xl rounded-[100%] right-0 -top-4">1</span>
+                      <img src="./assest/product1.png" alt="product" class="w-auto h-auto">
+                    </picture>
+                  </div>
+                  <div class="flex-grow pl-10">
+                    <div class="flex flex-col gap-2">
+                      <p class="text-[#3C4242] text-2xl font-bold">Blue Flower Print Crop Top x 1</p>
+                      <p class="text-[#3C4242] text-2xl font-bold">Color : <span class="text-[#6C4F59] font-light">Yellow</span></p>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-bold text-3xl text-[#6C4F59]">10$</span>
+                  </div>
+                </div>
+                <div class="flex items-center border-b border-solid pb-12 ">
+                  <div>
+                    <picture class="relative">
+                      <span class="absolute bg-[#707070] flex justify-center px-2 text-white text-xl rounded-[100%] right-0 -top-4 ">2</span>
+                      <img src="./assest/product2.png" alt="product" class="w-auto h-auto">
+                    </picture>
+                  </div>
+                  <div class="flex-grow pl-10">
+                    <div class="flex flex-col gap-2">
+                      <p class="text-[#3C4242] text-2xl font-bold">Levender Hoodie x 2</p>
+                      <p class="text-[#3C4242] text-2xl font-bold">Color : <span class="text-[#6C4F59] font-light">Levender</span></p>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="font-bold text-3xl text-[#6C4F59]">45$</span>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden lg:block">
+                <button
+                  class="w-full block text-left  max-w-[66rem] mx-auto"
+                >
+                  <div class="flex items-center justify-between py-8">
+                    <span class="flex items-center gap-4 text-3xl font-medium"
+                      > Order summary (2)
+                      
+                    </span>
+                    <span class="font-medium text-xl flex items-center gap-5 text-[#1773b0]">Show more
+                      <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                      />
+                    </svg></span>
+                  </div>
+                </button>
+              </div>
+              <div class="mt-12 border-b border-solid pb-12">
+                <div class="flex items-center gap-10">
+                  <label for="text1" class="hidden">Dicount card</label>
+                  <input type="text" name="text1" id="text1" placeholder="Discount code or gift card" class="w-full flex-grow py-5 px-6 outline-none border border-[#dde3ec] rounded-md text-2xl focus:border-[#3b5bdb]">
+                  <button class="flex-shrink bg-[#8A33FD] text-2xl rounded-md font-medium text-white py-5 px-8 transition-all ease-in duration-300 hover:bg-[#b197fc]"" aria-label="discount card">Apply</button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4 mt-10">
+                <div class="flex items-center justify-between border-b border-solid pb-4 ">
+                  <p class="font-bold text-3xl ">Subtotal <span class="text-[#6C4F59] font-light">(2 items)</span></p>
+                  <span class="font-bold text-3xl ">$55</span>
+                </div>
+                <div class="flex items-center justify-between border-b border-solid  pb-4">
+                  <p class="font-bold text-3xl ">Shipping</p>
+                  <span class="font-bold text-3xl ">$5</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="font-bold text-3xl ">Total</p>
+                  <span class="font-bold text-3xl ">$55</span>
+                </div>
+                <div class="my-10 hidden lg:block">
+                  <button
+                    class="w-full bg-[#8A33FD] text-2xl rounded-md font-medium text-white text-center py-6 px-8 transition-all ease-in duration-300 hover:bg-[#b197fc]"
+                  >
+                    Pay now
+                  </button>
+                </div>
+              </div>
+                
+              <footer class="border-t mt-16 hidden lg:block">
+                <div class="pt-8">
+                  <div class="flex items-center justify-start gap-4">
+                    <a
+                      href="#"
+                      class="underline text-[#1773b0] text-[14px] transition-all duration-300 ease-in hover:text-[#023253]"
+                      >Refund Policy</a
+                    >
+                    <a
+                      href="#"
+                      class="underline text-[#1773b0] text-[14px] transition-all duration-300 ease-in hover:text-[#023253]"
+                      >Terms of service</a
+                    >
+                  </div>
+                </div>
+              </footer>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
