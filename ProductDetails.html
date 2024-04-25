@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>Product page</title>
   </head>
   <body>
@@ -27,8 +28,59 @@
           </div>
         </div>
         <!-- Product Details -->
-        <div class="product flex justify-center container lg:flex-col">
-          <div class="image-gallery lg:w-full w-[62%]"></div>
+        <div class="product flex justify-between container lg:flex-col">
+          <div class="image-gallery lg:w-full w-[62%]">
+            <div class="w-full">
+              <div class="slider-container">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper main">
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img1.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img2.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img3.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img4.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img6.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img8.webp" alt="Image" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper mySwiper thumbnail-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img1.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img3.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img4.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img3.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img5.webp" alt="Image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assest/product-img6.webp" alt="Image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
           <div
             class="product-detail w-38-percent-minus-44 lg:w-full m-s-[44px]"
           >
@@ -735,6 +787,10 @@ background-color: rgb(184, 104, 0);                        "
       </div>
     </div>
   </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
     let boxList = document.querySelector(".boxlist");
     let selectBtn = document.querySelector(".selec-btn");
@@ -744,6 +800,8 @@ background-color: rgb(184, 104, 0);                        "
     boxList.addEventListener("click", (e) => {
       e.currentTarget.classList.add("hidden");
     });
+
+    // =====================================
     const quantityInput = document.getElementById("quantity");
     const quantityButtons = document.querySelectorAll(".quantity-btn");
 
@@ -759,6 +817,7 @@ background-color: rgb(184, 104, 0);                        "
         }
       });
     });
+    // ============================================
     const accordionItems = document.querySelectorAll(".accordion-item");
 
     accordionItems.forEach((accordionItem) => {
@@ -778,5 +837,23 @@ background-color: rgb(184, 104, 0);                        "
         }
       });
     });
+    // =================================================
+    var swiper = new Swiper('.mySwiper', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+});
+var swiper2 = new Swiper('.mySwiper2', {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
   </script>
 </html>
