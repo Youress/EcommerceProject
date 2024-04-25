@@ -25,6 +25,12 @@ module.exports = {
         'sm': {'max': '600px'},
         // => @media (max-width: 426px) { ... }
       },
+      spacing: {
+        '38-percent-minus-44': 'calc(38% - 44px)',
+      },
+      boxShadow : {
+        'shadow-1' : '0 5px 10px #00000026'
+      }
     },
   },
   plugins: [],

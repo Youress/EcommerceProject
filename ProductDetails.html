@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Product page</title>
+  </head>
+  <body>
+    <div class="mt-20 mb-20 overflow-hidden">
+      <div>
+        <div class="nav container">
+          <div class="page-header pb-8 text-center">
+            <nav class="flex justify-between text-xl">
+              <ol class="inline-flex flex-wrap list-none gap-2">
+                <li>
+                  <a href="#">Home <span>></span></a>
+                </li>
+                <li>
+                  <a href="#">Home <span>></span></a>
+                </li>
+                <li>
+                  <a href="#">Home <span>></span></a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <!-- Product Details -->
+        <div class="product flex justify-center container lg:flex-col">
+          <div class="image-gallery lg:w-full w-[62%]"></div>
+          <div
+            class="product-detail w-38-percent-minus-44 lg:w-full m-s-[44px]"
+          >
+            <div>
+              <div>
+                <h1 class="mb-5 text-[34px]">
+                  Spine Bar/Counter Stool with Back - Wood Base
+                </h1>
+              </div>
+              <div class="flex mb-6 items-start">
+                <div>
+                  <span class="text-4xl">$2,130.00</span>
+                </div>
+              </div>
+              <div class="mb-4">
+                <span class="font-semibold text-2xl">By</span>
+                <a
+                  href="#"
+                  class="decoration-current underline text-2xl underline-offset-1 text-[#4a49fe]"
+                  >Fredericia</a
+                >
+              </div>
+              <div class="h-[1px] bg-[#e9ecef] w-full my-10"></div>
+              <div class="my-10">
+                <div>
+                  <div class="mb-8">
+                    <fieldset>
+                      <div class="flex justify-between items-center">
+                        <legend class="block text-2xl font-semibold mb-3">
+                          Color<span class="font-semibold">:</span>
+                          <span class="font-light">Black Omni Leather</span>
+                        </legend>
+                      </div>
+                      <div class="items-start flex flex-wrap gap-4">
+                        <input
+                          class="opacity-0 absolute -z-10"
+                          type="radio"
+                          name="black"
+                          id="black"
+                          value="Black"
+                          checked=""
+                          required=""
+                        />
+                        <label
+                          class="rounded-[50%] w-[34px] h-[34px] p-0 aspect-square bg-black cursor-pointer"
+                          for="black"
+                          ><span
+                            class="absolute overflow-hidden h-0 w-0 border-0 p-0"
+                            >Black Omni Leather</span
+                          ></label
+                        ><input
+                          class="opacity-0 absolute -z-10"
+                          type="radio"
+                          name="natural"
+                          id="natural"
+                          value="naturalr"
+                          required=""
+                        />
+                        <label
+                          class="rounded-[50%] w-[34px] h-[34px] p-0 aspect-square bg-[#e8caae] cursor-pointer"
+                          for="natural"
+                          ><span
+                            class="absolute overflow-hidden h-0 w-0 border-0 p-0"
+                            >Natural Vegeta Leather</span
+                          ></label
+                        >
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="mb-8">
+                    <label id="3" class="block text-2xl font-semibold mb-3"
+                      >Size</label
+                    >
+                    <div class="w-full relative">
+                      <button
+                        class="selec-btn text-[#171717] max-w-[438px] w-full bg-white text-2xl leading-6 items-center flex relative py-6 pr-16 pl-6 text-start border border-[#c5c5c5]"
+                        type="button"
+                        aria-haspopup="listbox"
+                      >
+                        Bar Height
+                        <svg
+                          class="absolute right-4 w-8 h-8 top-1/2 transform -translate-y-1/2 stroke-current"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </button>
+                      <ul
+                        class="boxlist hidden max-h-52 text-[#171717] list-none absolute top-2 -left-2 bg-white w-full border border-[#c5c5c5] shadow-shadow-1"
+                        role="listbox"
+                      >
+                        <li
+                          class="flex items-center py-4 px-6 cursor-pointer text-2xl hover:bg-[#dcdcdc4d]"
+                          role="option"
+                        >
+                          <span>Bar Height</span>
+                        </li>
+                        <li
+                          class="flex items-center py-4 px-6 cursor-pointer text-2xl hover:bg-[#dcdcdc4d]"
+                          role="option"
+                        >
+                          <span>Counter Height</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="my-10">
+                    <label
+                      for="quantity"
+                      class="block text-2xl font-semibold mb-3"
+                      >Quantity</label
+                    >
+                    <div class="flex text-center">
+                      <a
+                        href="#"
+                        data-action="decrease"
+                        class="quantity-btn hover:border hover:border-[#c5c5c5] rounded-[3px] h-[48px] w-[48px] text-[#171717] leading-10"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="mx-auto my-4"
+                        >
+                          <title>Minus</title>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </a>
+                      <input
+                        class="quantity-input appearance-none h-[48px] w-[48px] text-center mx-4 text-2xl border border-[#c5c5c5] rounded-[3px] outline-none"
+                        aria-label="Quantity"
+                        id="quantity"
+                        type="number"
+                        name="quantity"
+                        value="1"
+                        min="0"
+                      />
+                      <a
+                        href="#"
+                        data-action="increase"
+                        class="quantity-btn hover:border hover:border-[#c5c5c5] rounded-[3px] h-[48px] w-[48px] text-[#171717] leading-10"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="mx-auto my-4"
+                        >
+                          <title>Plus</title>
+                          <line x1="12" y1="5" x2="12" y2="19"></line>
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="mt-16 mb-8">
+                    <button
+                      class="w-full py-6 px-10 text-2xl border-[1.5px] rounded-sm transition-all text-center border-[#4a49fe] bg-[#c5c5c5] leading-4 font-medium uppercase text-white hover:bg-[#4a49fe]"
+                      type="submit"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                  <div class="mb-4">
+                    <div class="mb-4">
+                      <div
+                        class="relative py-6 px-7 bg-[#eeeeee] text-[#555] items-center rounded-md inline-flex leading-6"
+                      >
+                        <svg
+                          class="me-4 my-2px w-6 h-6"
+                          stroke-width="1"
+                          aria-hidden="true"
+                          focusable="false"
+                          role="presentation"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                        >
+                          <rect
+                            stroke="currentColor"
+                            fill="none"
+                            x="1.9032375"
+                            y="2.5116053"
+                            width="12.166035"
+                            height="12.166035"
+                            rx="1.3517816"
+                            ry="1.3517816"
+                          ></rect>
+                          <line
+                            stroke="currentColor"
+                            fill="none"
+                            x1="10.689817"
+                            y1="1.159824"
+                            x2="10.689817"
+                            y2="3.8633871"
+                          ></line>
+                          <line
+                            stroke="currentColor"
+                            fill="none"
+                            x1="5.2826915"
+                            y1="1.159824"
+                            x2="5.2826915"
+                            y2="3.8633871"
+                          ></line>
+                          <line
+                            stroke="currentColor"
+                            fill="none"
+                            x1="1.9032375"
+                            y1="6.5669503"
+                            x2="14.069271"
+                            y2="6.5669503"
+                          ></line>
+                        </svg>
+                        <span class="text-2xl font-normal"
+                          >Production Time: Estimated 10-12 weeks</span
+                        >
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <span class="text-2xl font-bold tracking-widest"
+                        >Please note that as this product is made to order, it
+                        is not eligible for returns</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[1px] bg-[#e9ecef] w-full my-4"></div>
+              <div class="accordation-list mb-7">
+                <div class="">
+                  <details
+                    class="accordion-item relative border-b border-[#e9ecef]"
+                  >
+                    <summary
+                      class="relative py-6 pr-12 font-semibold text-3xl cursor-pointer flex justify-between items-center"
+                    >
+                      Description
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-8 h-8 svg-rotate"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                    </summary>
+                    <div class="overflow-hidden">
+                      <div
+                        class="pb-8 transform -translate-y-full opacity-0 transition-all duration-300 ease-in accordation-content"
+                      >
+                        <span
+                          class="font-normal text-[#171717bf] text-[16px] leading-8"
+                        >
+                          Looking for a comfortable seating option for a kitchen
+                          island or bar area? The Fredericia Spine Bar/Counter
+                          Stool is your answer. Meticulously crafted with
+                          attention to materials, its blend of classic and
+                          innovative design elements ensures a dynamic look that
+                          complements any space, especially in open-concept
+                          homes. And with its comfortable straight seat, it
+                          seamlessly combines the comfort of a dining chair with
+                          the social allure of a barstool. Perfect for unwinding
+                          with a glass of your favorite drink after a long day.
+                        </span>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <div class="">
+                  <details
+                    class="accordion-item relative border-b border-[#e9ecef]"
+                  >
+                    <summary
+                      class="flex justify-between items-center relative py-6 pr-12 font-semibold text-3xl cursor-pointer"
+                    >
+                      Features & Details
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-8 h-8 svg-rotate"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                    </summary>
+                    <div class="overflow-hidden">
+                      <div
+                        class="transform -translate-y-full opacity-0 transition-all duration-300 ease-in accordation-content"
+                      >
+                        <span> </span>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <div class="">
+                  <details
+                    class="accordion-item relative border-b border-[#e9ecef]"
+                  >
+                    <summary
+                      class="flex items-center justify-between relative py-6 pr-12 font-semibold text-3xl cursor-pointer"
+                    >
+                      Shipping & Returns
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-8 h-8 svg-rotate"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                    </summary>
+                    <div class="overflow-hidden">
+                      <div
+                        class="transform -translate-y-full opacity-0 transition-all duration-300 ease-in accordation-content"
+                      >
+                        <span> </span>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <div class="">
+                  <details
+                    class="accordion-item relative border-b border-[#e9ecef]"
+                  >
+                    <summary
+                      class="flex justify-between items-center relative py-6 pr-12 font-semibold text-3xl cursor-pointer"
+                    >
+                      Causes This Product Supports
+                      <span class="svg-rotate">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-8 h-8"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                    </summary>
+                    <div class="overflow-hidden">
+                      <div
+                        class="transform -translate-y-full opacity-0 transition-all duration-300 ease-in accordation-content"
+                      >
+                        <span> </span>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </div>
+              <div class="flex items-start justify-between">
+                <img
+                  src="./assest/certifi.webp"
+                  alt="Certified"
+                  class="block max-w-64"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Products Suggestion -->
+        <div class="product-suggest my-32">
+          <div class="">
+            <div class="w-full p-4 mx-auto my-0 inline-block">
+              <h4 class="text-center mb-12 text-5xl font-medium">
+                You're gonna love
+              </h4>
+              <ul class="p-0 m-0 list-none w-full flex items-center justify-center gap-4 flex-wrap">
+                <li class="mb-12">
+                  <a href="#">
+                    <div class="w-[300px] h-[300px] block relative">
+                      <img
+                        src="./assest/suggest-1.webp"
+                        alt="product"
+                        class="absolute top-0 left-0 w-[300px] h-[300px] opacity-0 hover:opacity-100 z-20"
+                      />
+                      <img
+                        src="./assest/suggest-2.webp"
+                        alt="products"
+                        class="h-[300px]"
+                      />
+                    </div>
+                  </a>
+                  <div class="text-left mt-6 text-black">
+                    <div>
+                      <a href="#" class="text-[#1a1a1a] text-3xl"
+                        >Hoff Planter 004</a
+                      >
+                    </div>
+                  </div>
+                  <div class="nosto-rating">
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                  </div>
+                  <div>
+                    <a href="#" class="text-[#1a1a1a] text-3xl"
+                      >by Bergs Potter</a
+                    >
+                  </div>
+                  <div>
+                    <a href="#" class="text-[#1a1a1a] text-3xl">$56.00</a>
+                  </div>
+                  <div
+                    class="flex my-4 mx-4"
+                  >
+                    <div
+                      class="product-block-options__inner sku-item"
+                    >
+                      <span
+                        class="group w-14 h-14 mx-1 mb-4 inline-block rounded-full relative bg-cover"
+                        style="
+background-color: rgb(9, 255, 173);                        "
+                      >
+                        <span class="product-name absolute -left-1/2 bottom-full bg-white border border-[#e9ecef] whitespace-nowrap py-2 px-5 rounded-md opacity-0 group-hover:opacity-100 "
+                          >Raw Grey</span
+                        >
+                       
+                      </span>
+                    </div>
+                    <div
+                      class="product-block-options__inner sku-item"
+                      style=""
+                    >
+                      <span
+                        class="group w-14 h-14 mx-1 mb-4 inline-block rounded-full relative bg-cover"
+                        style="
+background-color: rgb(103, 103, 0);                        "
+                      >
+                        <span class="product-name absolute -left-1/2 bottom-full bg-white border border-[#e9ecef] whitespace-nowrap py-2 px-5 rounded-md opacity-0 group-hover:opacity-100"
+                          >Raw Rosa</span
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-12">
+                  <a href="#">
+                    <div class="w-[300px] h-[300px] block relative">
+                      <img
+                        src="./assest/suggest-1.webp"
+                        alt="product"
+                        class="absolute top-0 left-0 w-[300px] h-[300px] opacity-0 hover:opacity-100 z-20"
+                      />
+                      <img
+                        src="./assest/suggest-2.webp"
+                        alt="products"
+                        class="h-[300px]"
+                      />
+                    </div>
+                  </a>
+                  <div class="text-left mt-6 text-black">
+                    <div>
+                      <a href="#" class="text-[#1a1a1a] text-3xl"
+                        >Hoff Planter 004</a
+                      >
+                    </div>
+                  </div>
+                  <div class="nosto-rating">
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                  </div>
+                  <div>
+                    <a href="#" class="text-[#1a1a1a] text-3xl"
+                      >by Bergs Potter</a
+                    >
+                  </div>
+                  <div>
+                    <a href="#" class="text-[#1a1a1a] text-3xl">$56.00</a>
+                  </div>
+                  <div
+                    class="flex my-4 mx-4"
+                  >
+                    <div
+                      class="product-block-options__inner sku-item"
+                    >
+                      <span
+                        class="group w-14 h-14 mx-1 mb-4 inline-block rounded-full relative bg-cover"
+                        style="
+background-color: blueviolet;                        "
+                      >
+                        <span class="product-name absolute -left-1/2 bottom-full bg-white border border-[#e9ecef] whitespace-nowrap py-2 px-5 rounded-md opacity-0 group-hover:opacity-100 "
+                          >Raw Grey</span
+                        >
+                       
+                      </span>
+                    </div>
+                    <div
+                      class="product-block-options__inner sku-item"
+                      style=""
+                    >
+                      <span
+                        class="group w-14 h-14 mx-1 mb-4 inline-block rounded-full relative bg-cover"
+                        style="
+background-color: rgb(184, 104, 0);                        "
+                      >
+                        <span class="product-name absolute -left-1/2 bottom-full bg-white border border-[#e9ecef] whitespace-nowrap py-2 px-5 rounded-md opacity-0 group-hover:opacity-100"
+                          >Raw Rosa</span
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-12">
+                  <a href="#">
+                    <div class="w-[300px] h-[300px] block relative">
+                      <img
+                        src="./assest/suggest-1.webp"
+                        alt="product"
+                        class="absolute top-0 left-0 w-[300px] h-[300px] opacity-0 hover:opacity-100 z-20"
+                      />
+                      <img
+                        src="./assest/suggest-2.webp"
+                        alt="products"
+                        class="h-[300px]"
+                      />
+                    </div>
+                  </a>
+                  <div class="text-left mt-6 text-black">
+                    <div>
+                      <a href="#" class="text-[#1a1a1a] text-3xl"
+                        >Hoff Planter 004</a
+                      >
+                    </div>
+                  </div>
+                  <div class="nosto-rating">
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                  </div>
+                  <div>
+                    <a href="#" class="text-[#1a1a1a] text-3xl"
+                      >by Bergs Potter</a
+                    >
+                  </div>
+                  <div>
+                    <a href="#" class="text-[#1a1a1a] text-3xl">$56.00</a>
+                  </div>
+                  <div
+                    class="flex my-4 mx-4"
+                  >
+                    <div
+                      class="product-block-options__inner sku-item"
+                    >
+                      <span
+                        class="group w-14 h-14 mx-1 mb-4 inline-block rounded-full relative bg-cover"
+                        style="background-color: blanchedalmond;
+                        "
+                      >
+                        <span class="product-name absolute -left-1/2 bottom-full bg-white border border-[#e9ecef] whitespace-nowrap py-2 px-5 rounded-md opacity-0 group-hover:opacity-100 "
+                          >Raw Grey</span
+                        >
+                       
+                      </span>
+                    </div>
+                    <div
+                      class="product-block-options__inner sku-item"
+                      style=""
+                    >
+                      <span
+                        class="group w-14 h-14 mx-1 mb-4 inline-block rounded-full relative bg-cover"
+                        style="
+                          background-color: black;
+                        "
+                      >
+                        <span class="product-name absolute -left-1/2 bottom-full bg-white border border-[#e9ecef] whitespace-nowrap py-2 px-5 rounded-md opacity-0 group-hover:opacity-100"
+                          >Raw Rosa</span
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-12">
+                  <a href="#">
+                    <div class="w-[300px] h-[300px] block relative">
+                      <img
+                        src="./assest/suggest-1.webp"
+                        alt="product"
+                        class="absolute top-0 left-0 w-[300px] h-[300px] opacity-0 hover:opacity-100 z-20"
+                      />
+                      <img
+                        src="./assest/suggest-2.webp"
+                        alt="products"
+                        class="h-[300px]"
+                      />
+                    </div>
+                  </a>
+                  <div class="text-left mt-6 text-black">
+                    <div>
+                      <a href="#" class="text-[#1a1a1a] text-3xl"
+                        >Hoff Planter 004</a
+                      >
+                    </div>
+                  </div>
+                  <div class="nosto-rating">
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                    <span class="text-[#edbe53] inline-block w-4 h-9">★</span>
+                  </div>
+                  <div>
+                    <a href="#" class="text-[#1a1a1a] text-3xl"
+                      >by Bergs Potter</a
+                    >
+                  </div>
+                  <div>
+                    <a href="#" class="text-[#1a1a1a] text-3xl">$56.00</a>
+                  </div>
+                  <div
+                    class="flex my-4 mx-4"
+                  >
+                    <div
+                      class="product-block-options__inner sku-item"
+                    >
+                    <!-- add background-image -->
+                      <span
+                        class="group w-14 h-14 mx-1 mb-4 inline-block rounded-full relative bg-cover"
+                        style="
+                          background-color: blanchedalmond;
+                        "
+                      >
+                        <span class="product-name absolute -left-1/2 bottom-full bg-white border border-[#e9ecef] whitespace-nowrap py-2 px-5 rounded-md opacity-0 group-hover:opacity-100 "
+                          >Raw Grey</span
+                        >
+                       
+                      </span>
+                    </div>
+                    <div
+                      class="product-block-options__inner sku-item"
+                      style=""
+                    >
+                      <span
+                        class="group w-14 h-14 mx-1 mb-4 inline-block rounded-full relative bg-cover"
+                        style="
+                          background-color: rgb(0, 255, 255);
+                        "
+                      >
+                        <span class="product-name absolute -left-1/2 bottom-full bg-white border border-[#e9ecef] whitespace-nowrap py-2 px-5 rounded-md opacity-0 group-hover:opacity-100"
+                          >Raw Rosa</span
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let boxList = document.querySelector(".boxlist");
+    let selectBtn = document.querySelector(".selec-btn");
+    selectBtn.addEventListener("click", (e) => {
+      boxList.classList.toggle("hidden");
+    });
+    boxList.addEventListener("click", (e) => {
+      e.currentTarget.classList.add("hidden");
+    });
+    const quantityInput = document.getElementById("quantity");
+    const quantityButtons = document.querySelectorAll(".quantity-btn");
+
+    quantityButtons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const action = this.dataset.action;
+        const currentValue = parseInt(quantityInput.value);
+        if (action === "increase") {
+          quantityInput.value = currentValue + 1;
+        } else if (action === "decrease" && currentValue > 0) {
+          quantityInput.value = currentValue - 1;
+        }
+      });
+    });
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach((accordionItem) => {
+      const accordationContent = accordionItem.querySelector(
+        ".accordation-content"
+      );
+      const arrowDown = accordionItem.querySelector(".svg-rotate");
+
+      accordionItem.addEventListener("click", () => {
+        accordionItem.classList.toggle("is-open");
+        if (accordionItem.classList.contains("is-open")) {
+          accordationContent.classList.add("opacity-100", "translate-y-0");
+          arrowDown.classList.add("rotate-90");
+        } else {
+          accordationContent.classList.remove("opacity-100", "translate-y-0");
+          arrowDown.classList.remove("rotate-90");
+        }
+      });
+    });
+  </script>
+</html>
