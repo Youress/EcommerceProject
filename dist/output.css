@@ -2271,6 +2271,15 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[c5c5c5\#\] {
+  background-color: c5c5c5#;
+}
+
+.bg-\[\#4a49fe\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 73 254 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
