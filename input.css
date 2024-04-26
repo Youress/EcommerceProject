@@ -26,4 +26,16 @@ body {
     padding-left: 3.2rem;
     padding-right: 3.2rem;
 }
-  
+.swiper-slide-thumb-active{
+    border-bottom: 3px solid black;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
