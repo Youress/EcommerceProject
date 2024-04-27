@@ -3588,6 +3588,18 @@ input[type=number] {
     margin-right: 0px;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .md\:\!ml-0 {
+    margin-left: 0px !important;
+  }
+
   .md\:block {
     display: block;
   }
