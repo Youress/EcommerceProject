@@ -31,8 +31,8 @@
           </div>
         </div>
         <!-- Product Details -->
-        <div class="product flex justify-between container">
-          <div class="image-gallery w-[62%]">
+        <div class="product md:flex md:justify-center md:container md:px-12 ">
+          <div class="image-gallery w-full md:w-1/2 lg:w-[62%]">
             <div class="w-full">
               <div class="slider-container">
                 <div class="swiper mySwiper2">
@@ -63,13 +63,13 @@
                     </div>
                   </div>
                   <div
-                    class="swiper-button-next bg-[#e9e0d7] hover:bg-[#fdfcfb] !w-[4.4rem] !h-[4.4rem] !text-black after:!right-0 after:!text-2xl"
+                    class="swiper-button-next !hidden md:!absolute bg-[#e9e0d7] hover:bg-[#fdfcfb] !w-[4.4rem] !h-[4.4rem] !text-black after:!right-0 after:!text-2xl"
                   ></div>
                   <div
-                    class="swiper-button-prev bg-[#e9e0d7] hover:bg-[#fdfcfb] !w-[4.4rem] !h-[4.4rem] !text-black after:!left-0-0 after:!text-2xl"
+                    class="swiper-button-prev !hidden md:!absolute bg-[#e9e0d7] hover:bg-[#fdfcfb] !w-[4.4rem] !h-[4.4rem] !text-black after:!left-0-0 after:!text-2xl"
                   ></div>
                 </div>
-                <div class="swiper mySwiper thumbnail-slider mt-6">
+                <div class="swiper mySwiper thumbnail-slider mt-6 mb-8 !ml-6">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <img src="./assest/product-img1.webp" alt="Image" />
@@ -100,7 +100,7 @@
               </div>
             </div>
           </div>
-          <div class="product-detail w-38-percent-minus-44 m-s-[44px]">
+          <div class="product-detail w-full md:w-[45%] lg:w-38-percent-minus-44 m-s-[44px] mx-auto md:ml-auto md:mr-0 px-9 md:px-0">
             <div>
               <div>
                 <h1 class="mb-5 text-[34px]">
@@ -513,13 +513,13 @@
           </div>
         </div>
         <!-- Products Suggestion -->
-        <div class="product-suggest my-32 container">
+        <div class="product-suggest my-32 md:container px-5 mx-auto">
           <div class="">
             <div class="w-full p-4 mx-auto my-0 inline-block">
               <h4 class="text-center mb-12 text-5xl font-medium">
                 You're gonna love
               </h4>
-              <ul class="p-0 m-0 list-none w-full grid grid-cols-4 gap-4">
+              <ul class="p-0 m-0 list-none w-full grid md:grid-cols-4 gap-4 grid-cols-2">
                 <li class="mb-12">
                   <a href="#">
                     <div class="block relative">
@@ -876,12 +876,12 @@ accordionItems.forEach((accordionItem) => {
     accordionItem.classList.toggle("is-open");
     if (accordionItem.classList.contains("is-open")) {
       accordationContent.classList.add("opacity-100");
-      accordionBox.classList.add("h-full");
+      accordionBox.classList.add("h-fit");
       plus.classList.add("rotate-90");
       minus.classList.add("rotate-180");
     } else {
       accordationContent.classList.remove("opacity-100");
-      accordionBox.classList.remove("h-full");
+      accordionBox.classList.remove("h-fit");
       plus.classList.remove("rotate-90");
       minus.classList.remove("rotate-180");
     }
