@@ -11,8 +11,10 @@ module.exports = {
       },
       boxShadow : {
         'shadow-1' : '0 5px 10px #00000026'
-      }
-    },
+      },
+      transitionProperty: {
+        'height': 'height',
+    },}
   },
   plugins: [],
 };
