@@ -63,10 +63,10 @@
                     </div>
                   </div>
                   <div
-                    class="swiper-button-next !hidden md:!absolute bg-[#e9e0d7] hover:bg-[#fdfcfb] !w-[4.4rem] !h-[4.4rem] !text-black after:!right-0 after:!text-2xl"
+                    class="swiper-button-next opacity-0 md:opacity-100 bg-[#e9e0d7] hover:bg-[#fdfcfb] !w-[4.4rem] !h-[4.4rem] !text-black after:!right-0 after:!text-2xl"
                   ></div>
                   <div
-                    class="swiper-button-prev !hidden md:!absolute bg-[#e9e0d7] hover:bg-[#fdfcfb] !w-[4.4rem] !h-[4.4rem] !text-black after:!left-0-0 after:!text-2xl"
+                    class="swiper-button-prev opacity-0 md:opacity-100 bg-[#e9e0d7] hover:bg-[#fdfcfb] !w-[4.4rem] !h-[4.4rem] !text-black after:!left-0-0 after:!text-2xl"
                   ></div>
                 </div>
                 <div class="swiper mySwiper thumbnail-slider mt-6 mb-8 md:mb-0 !ml-6 md:!ml-0">
@@ -890,10 +890,8 @@ accordionItems.forEach((accordionItem) => {
 
     // =================================================
     var swiper = new Swiper(".mySwiper", {
-      loop: true,
       spaceBetween: 10,
       slidesPerView: 6,
-      // freeMode: true,
       on: {
         activeIndexChange: function () {
           console.log("swiper initialized");
