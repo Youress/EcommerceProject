@@ -123,49 +123,38 @@
               <div class="h-[1px] bg-[#e9ecef] w-full my-10"></div>
               <div class="my-10">
                 <div>
-                  <div class="mb-8">
-                    <fieldset>
-                      <div class="flex justify-between items-center">
-                        <legend class="block text-2xl font-semibold mb-3">
-                          Color<span class="font-semibold">:</span>
-                          <span class="font-light">Black Omni Leather</span>
-                        </legend>
-                      </div>
-                      <div class="items-start flex flex-wrap gap-4">
-                        <input
-                          class="opacity-0 absolute -z-10"
-                          type="radio"
-                          name="black"
-                          id="black"
-                          value="Black"
-                          checked=""
-                          required=""
-                        />
-                        <label
-                          class="rounded-[50%] w-[34px] h-[34px] p-0 aspect-square bg-black cursor-pointer"
-                          for="black"
-                          ><span
-                            class="absolute overflow-hidden h-0 w-0 border-0 p-0"
-                            >Black Omni Leather</span
-                          ></label
-                        ><input
-                          class="opacity-0 absolute -z-10"
-                          type="radio"
-                          name="natural"
-                          id="natural"
-                          value="naturalr"
-                          required=""
-                        />
-                        <label
-                          class="rounded-[50%] w-[34px] h-[34px] p-0 aspect-square bg-[#e8caae] cursor-pointer"
-                          for="natural"
-                          ><span
-                            class="absolute overflow-hidden h-0 w-0 border-0 p-0"
-                            >Natural Vegeta Leather</span
-                          ></label
-                        >
-                      </div>
-                    </fieldset>
+                  <div class="mb-8 relative w-full max-w-[238px]">
+                    <span
+                      class="absolute bottom-[30%] z-30 transform -translate-y-1/2 -translate-x-1/2 right-0"
+                      ><svg
+                        class="absolute right-4 w-8 h-8 top-1/2 transform -translate-y-1/2 stroke-current"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </span>
+
+                    <label
+                      id="size"
+                      for="sizepicker"
+                      class="block text-2xl font-semibold mb-3"
+                      >Color<span>:</span><span class="font-light pl-4">black</span></label
+                    >
+                    <select
+                      name="sizepicker"
+                      id="sizepicker"
+                      class="w-full appearance-none relative text-[#171717] max-w-[238px] bg-white text-2xl leading-6 items-center flex outline-none py-6 pr-16 pl-6 text-start border border-[#c5c5c5]"
+                    >
+                      <option value="Black">Black</option>
+                      <option value="Beige">Beige</option>
+                    </select>
                   </div>
                   <div class="mb-8 relative">
                     <span
